@@ -1,0 +1,55 @@
+Respostas da Avaliação:
+Acadêmico: Álvaro Pagliari
+
+
+1) C
+2) E
+3) 
+Há 3 maneiras de restringir o acesso aos atributos e métodos:
+  private   - define que o acesso é privado à classe;
+  protected - define que o acesso é da classe e das subclasses descendentes;
+  public    - define que o acesso é público para qualquer classe;
+4) B
+5) 
+  a) F
+  b) V
+  c) F
+  d) V
+  e) F
+6) 
+  Implements é utilizado para implementar uma interface em uma classe concreta. 
+  Extends é utilizado para herdar ou estender uma classe filha em relação à uma classe pai.
+  Utilizando estas duas funcionalidades é possível utilizar a herança e o polimorfismo na orientação a objetos.
+7)
+
+========================================
+package org.demonstracao.interfaces;
+
+public interface IDemonstracao {
+  public void setValor(String valor);
+  public String getValor();
+}
+
+----------------------------------------
+package org.demonstracao.concretes;
+
+public class DemonstracaoImpl implements IDemonstracao {
+  private String valor = "";
+  
+  public DemonstracaoImpl(){
+  
+  }
+  
+  @Override
+  public void setValor(String valor){
+    this.valor = valor;
+  }
+  
+  @Override
+  public String getValor(){
+    return valor;
+  }
+}
+=========================================
+
+8) No projeto do eclipse no repositório do github, endereço:  https://github.com/alvaropag/webmob_poo_trabalho_final.git
